@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+
+//variables
+@import './assets/styles/scss/variables/fonts';
+@import './assets/styles/scss/variables/variables';
+
+//bootstrap
+// @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap";
+
+
+// theme mixins
+@import './assets/styles/scss/mixins/button';
+@import './assets/styles/scss/mixins/modal';
+@import './assets/styles/scss/mixins/switch';
+@import './assets/styles/scss/mixins/border-radius';
+
+// Theme components
+@import "./assets/styles/scss/components/accordion";
+@import "./assets/styles/scss/components/alert";
+@import "./assets/styles/scss/components/avatar";
+@import "./assets/styles/scss/components/buttons";
+@import "./assets/styles/scss/components/card";
+@import "./assets/styles/scss/components/chart";
+@import "./assets/styles/scss/components/content";
+@import "./assets/styles/scss/components/dropdown";
+@import "./assets/styles/scss/components/feather";
+@import "./assets/styles/scss/components/footer";
+@import "./assets/styles/scss/components/forms";
+@import "./assets/styles/scss/components/hamburger";
+@import "./assets/styles/scss/components/list-group";
+@import "./assets/styles/scss/components/main";
+@import "./assets/styles/scss/components/modal";
+@import "./assets/styles/scss/components/navbar";
+@import "./assets/styles/scss/components/progress";
+@import "./assets/styles/scss/components/reboot";
+@import "./assets/styles/scss/components/sidebar";
+@import "./assets/styles/scss/components/sizing";
+@import "./assets/styles/scss/components/tables";
+@import "./assets/styles/scss/components/type";
+@import "./assets/styles/scss/components/wrapper";
+
+// Theme utilities
+@import "./assets/styles/scss/utilities/background";
+@import "./assets/styles/scss/utilities/borders";
+@import "./assets/styles/scss/utilities/cursors";
+@import "./assets/styles/scss/utilities/overflow";
+
+// 3rd party plugins
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "~@fortawesome/fontawesome-free/scss/regular";
+// @import "~@fortawesome/fontawesome-free/scss/solid";
+// @import "~jsvectormap/dist/css/jsvectormap";
+// @import "~simplebar/dist/simplebar";
+// @import "~flatpickr/dist/flatpickr";
+
+// 3rd party plugin styles
+@import "./assets/styles/scss/vendor/simplebar";
+@import "./assets/styles/scss/vendor/flatpickr";

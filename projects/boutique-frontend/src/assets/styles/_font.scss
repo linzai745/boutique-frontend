@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'NotoSansSC-Light';
+    src: url('../fonts/Noto_Sans_SC/NotoSansSC-Light-Alphabetic.woff2') format('woff2'),
+        url('../fonts/Noto_Sans_SC/NotoSansSC-Light-Alphabetic.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansSC-Bold';
+    src: url('../fonts/Noto_Sans_SC/NotoSansSC-Bold-Alphabetic.woff2') format('woff2'),
+        url('../fonts/Noto_Sans_SC/NotoSansSC-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansSC-Black';
+    src: url('../fonts/Noto_Sans_SC/NotoSansSC-Black-Alphabetic.woff2') format('woff2'),
+        url('../fonts/Noto_Sans_SC/NotoSansSC-Black-Alphabetic.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansSC-Thin';
+    src: url('../fonts/Noto_Sans_SC/NotoSansSC-Thin-Alphabetic.woff2') format('woff2'),
+        url('../fonts/Noto_Sans_SC/NotoSansSC-Thin-Alphabetic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansSC-Medium';
+    src: url('../fonts/Noto_Sans_SC/NotoSansSC-Medium-Alphabetic.woff2') format('woff2'),
+        url('../fonts/Noto_Sans_SC/NotoSansSC-Medium-Alphabetic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NotoSansSC-Regular';
+    src: url('../fonts/Noto_Sans_SC/NotoSansSC-Regular-Alphabetic.woff2') format('woff2'),
+        url('../fonts/Noto_Sans_SC/NotoSansSC-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// primary font 
+$primary_font: NotoSansSC-Regular;
+
+// fonts var
+$font_medium: NotoSansSC-Medium;
+$font_thin: NotoSansSC-Thin;
+$font_black: NotoSansSC-Black;
+$font_bold: NotoSansSC-Bold;
+$font_light: NotoSansSC-Light;
+
+// font-weight
+$thin:100;
+$light:300;
+$regular:400;
+$medium: 500;
+$bold:700;
+$black:900;
+
+// Font size
+$font-xs:12px;
+$font-sm: 14px;
+$primary-fs: 16px;
+$font-md: 18px;
+$font-lg: 20px;
+

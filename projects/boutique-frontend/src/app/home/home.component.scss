@@ -1,0 +1,30 @@
+ol.carousel-indicators {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: 94%;
+    width: 6%;
+    z-index: 9;
+    align-items: center;
+}
+
+ol.carousel-indicators li {
+    position: relative;
+    display: block;
+    margin: 8px 0 8px 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 0;
+    background: rgba(0,0,0,.38);
+    transition: all .3s linear;
+}
+
+ol.carousel-indicators li.active {
+    background-color: #542ded;
+    transform: scale(2);
+}
