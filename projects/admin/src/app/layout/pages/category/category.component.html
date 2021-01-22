@@ -1,0 +1,30 @@
+<div class="container-fluid p-0">
+    <h1 class="h3 mb-3">分类管理</h1>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li *ngFor="let level1 of categories" class="sidebar-item"> <!-- 一级分类 -->
+                            <a [attr.data-bs-target]="'#level1Cid'+level1.catId" [attr.aria-controls]="'#level1Cid'+level1.catId" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+                               {{level1.name}}
+                            </a>
+                            <ul [id]="'level1Cid'+level1.catId" class="sidebar-dropdown collapse "> <!-- 二级分类 -->
+                                <li class="sidebar-item" *ngFor="let level2 of level1.children">
+                                    <a [attr.data-bs-target]="'#level2Cid'+level2.catId" [attr.aria-controls]="'#level2Cid'+level2.catId" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
+                                        {{level2.name}}
+                                    </a>
+                                    <ul [id]="'level2Cid'+level2.catId" class="sidebar-dropdown collapse"> <!-- 三级分类 -->
+                                        <li class="sidebar-item" *ngFor="let level3 of level2.children">
+                                            <a class="sidebar-link">{{level3.name}}</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
