@@ -6,15 +6,17 @@ import { LayoutComponent } from './layout.component';
 
 import { LayoutRoutingModule } from '../layout/layout-routing.module';
 import { ComponentsModule } from '../components/components.module';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
-    LayoutComponent
+    LayoutComponent,
+    DashboardComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(LayoutRoutingModule),
+    LayoutRoutingModule,
     ComponentsModule
   ],
   exports: [

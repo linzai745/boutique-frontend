@@ -8,7 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { IconsModule } from '../icons/icons.module';
 
 
-
 @NgModule({
   declarations: [SidebarComponent, NavbarComponent, FooterComponent],
   imports: [
