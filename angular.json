@@ -259,6 +259,131 @@
           }
         }
       }
+    },
+    "boutique-manager": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "less"
+        }
+      },
+      "root": "projects/boutique-manager",
+      "sourceRoot": "projects/boutique-manager/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/boutique-manager",
+            "index": "projects/boutique-manager/src/index.html",
+            "main": "projects/boutique-manager/src/main.ts",
+            "polyfills": "projects/boutique-manager/src/polyfills.ts",
+            "tsConfig": "projects/boutique-manager/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/boutique-manager/src/favicon.ico",
+              "projects/boutique-manager/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
+            ],
+            "styles": [
+              "projects/boutique-manager/src/styles.less"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/boutique-manager/src/environments/environment.ts",
+                  "with": "projects/boutique-manager/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "boutique-manager:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "boutique-manager:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "boutique-manager:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/boutique-manager/src/test.ts",
+            "polyfills": "projects/boutique-manager/src/polyfills.ts",
+            "tsConfig": "projects/boutique-manager/tsconfig.spec.json",
+            "karmaConfig": "projects/boutique-manager/karma.conf.js",
+            "assets": [
+              "projects/boutique-manager/src/favicon.ico",
+              "projects/boutique-manager/src/assets"
+            ],
+            "styles": [
+              "projects/boutique-manager/src/styles.less"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/boutique-manager/tsconfig.app.json",
+              "projects/boutique-manager/tsconfig.spec.json",
+              "projects/boutique-manager/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/boutique-manager/e2e/protractor.conf.js",
+            "devServerTarget": "boutique-manager:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "boutique-manager:serve:production"
+            }
+          }
+        }
+      }
     }
   },
   "defaultProject": "boutique-manager"
