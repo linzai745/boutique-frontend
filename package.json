@@ -46,8 +46,6 @@
     "angular-feather": "^6.0.10",
     "bootstrap": "^5.0.0-beta1",
     "flatpickr": "^4.6.6",
-    "ng-alain": "^11.7.0",
-    "ng-zorro-antd": "^11.2.0",
     "rxjs": "~6.6.6",
     "screenfull": "^5.1.0",
     "simplebar": "^5.3.0",
